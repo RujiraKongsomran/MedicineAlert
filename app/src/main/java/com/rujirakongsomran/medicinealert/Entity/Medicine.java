@@ -23,26 +23,54 @@ public class Medicine {
 
     private String description;
 
-    private Date[] datetimeMed;
+    //private Date[] datetimeMed;
 
     private String Note;
 
     public Medicine() {
     }
 
-    public Medicine(String name, float volume, float number, int times, String when, String description, Date[] datetimeMed, String note) {
+    public Medicine(String name, float volume, float number, int times, String when, String description, String note) {
         this.name = name;
         this.volume = volume;
         this.number = number;
         this.times = times;
         this.when = when;
         this.description = description;
-        this.datetimeMed = datetimeMed;
+        //this.datetimeMed = datetimeMed;
         Note = note;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVolume(float volume) {
+        this.volume = volume;
+    }
+
+    public void setNumber(float number) {
+        this.number = number;
+    }
+
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
+    public void setWhen(String when) {
+        this.when = when;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setNote(String note) {
+        Note = note;
     }
 
     public int getId() {
@@ -73,9 +101,9 @@ public class Medicine {
         return description;
     }
 
-    public Date[] getDatetimeMed() {
-        return datetimeMed;
-    }
+//    public Date[] getDatetimeMed() {
+//        return datetimeMed;
+//    }
 
     public String getNote() {
         return Note;

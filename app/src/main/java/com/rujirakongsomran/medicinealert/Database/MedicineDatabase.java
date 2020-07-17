@@ -50,8 +50,8 @@ public abstract class MedicineDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            medicineDao.insert(new Medicine("PROPRANOLOL", 10, 1, 2, "หลังอาหารเช้า เย็น", "ยาในโรคหัวใจและหลอดเลือด, ลดใจสั่น, ป้องกันไมเกรน", null, "เก็บยานี้ให้พ้นแสง, เป็นยาตัวเดียวกับ BETALOL 10 MG"));
-            medicineDao.insert(new Medicine("MOCYDONE", 10, 1, 3, "ก่อนอาหารเช้า กลางวัน เย็น", "ยาปรับการเคลื่อนไหวของทางเดินอาหาร, ลดการคลื่นไส้อาเจียน", null, null));
+            medicineDao.insert(new Medicine("PROPRANOLOL", 10, 1, 2, "หลังอาหารเช้า เย็น", "ยาในโรคหัวใจและหลอดเลือด, ลดใจสั่น, ป้องกันไมเกรน", "เก็บยานี้ให้พ้นแสง, เป็นยาตัวเดียวกับ BETALOL 10 MG"));
+            medicineDao.insert(new Medicine("MOCYDONE", 10, 1, 3, "ก่อนอาหารเช้า กลางวัน เย็น", "ยาปรับการเคลื่อนไหวของทางเดินอาหาร, ลดการคลื่นไส้อาเจียน", null));
             return null;
         }
     }
